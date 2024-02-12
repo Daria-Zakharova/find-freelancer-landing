@@ -30,11 +30,11 @@
             Ziro
           </a>
           <ul class="nav__list nav__list__flex-wrp">
-            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Become a member</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a></li>
+            <li class="nav__item"><a class="nav__link" href="#reviews">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="#tutorial">Become a member</a></li>
+            <li class="nav__item"><a class="nav__link" href="#advantages">About us</a></li>
           </ul>
         </nav>
         <div class="header__gap"></div>
@@ -73,7 +73,61 @@
                 width="23" height="23">
                 <use href="./assets/img/sprite.svg#play"></use>
               </svg></span>Watch demo</button>
+          <div class="bg-image">
+            <div class="bg-image__central-img"></div>
+            <!-- large blue round -->
+            <div class="bg-image__item bg-image__item--transp50 bg-image__item--center"></div>
+            <!-- large orange round -->
+            <div
+              class="bg-image__item bg-image__item--accent-color bg-image__item--transp50 bg-image__item--center-accent">
+            </div>
+
+            <!-- inner small rounds clockwise starting from the bottom-left-->
+            <!-- orange -->
+            <div class="bg-image__item bg-image__item--accent-color bg-image__item--inner bg-image__item--w22"
+              style="left: 146px; bottom: 230px;"></div>
+            <!-- blue -->
+            <div class="bg-image__item  bg-image__item--inner bg-image__item--w25" style="left: 220px; bottom: 385px;">
+            </div>
+            <!-- orange -->
+            <div class=" bg-image__item bg-image__item--accent-color bg-image__item--inner bg-image__item--w17"
+              style="left: 406px; bottom: 368px;"></div>
+            <!-- outer items clockwise starting from the bottom-left -->
+            <!-- blue round -->
+            <div class=" bg-image__item bg-image__item--outer bg-image__item--front bg-image__item--w22"
+              style="left: 57px; bottom: 194px;">
+            </div>
+            <!-- orange round -->
+            <div class="bg-image__item bg-image__item--accent-color bg-image__item--outer bg-image__item--w34"
+              style="left: 40px; bottom: 310px;"></div>
+            <!-- blue square -->
+            <div class="bg-image__item bg-image__item--square bg-image__item--rot60 bg-image__item--w29"
+              style="left: 88px; bottom: 405px;">
+            </div>
+            <!-- orange round -->
+            <div class="bg-image__item bg-image__item--accent-color bg-image__item--outer bg-image__item--w26"
+              style="left: 223px; bottom: 482px;"></div>
+            <!-- orange square -->
+            <div
+              class="bg-image__item bg-image__item--square bg-image__item--bold-line bg-image__item--accent-color bg-image__item--rot46 bg-image__item--w65 bg-image__item--bg"
+              style="left: 330px; bottom: 444px;">
+            </div>
+            <!-- orange round -->
+            <div class="bg-image__item bg-image__item--accent-color bg-image__item--outer bg-image__item--w17"
+              style="left: 518px; bottom: 436px;"></div>
+            <!-- blue round -->
+            <div class="bg-image__item bg-image__item--outer bg-image__item--w9" style="left: 559px; bottom: 389px;">
+            </div>
+            <!-- orange square -->
+            <div
+              class="bg-image__item bg-image__item--square bg-image__item--accent-color  bg-image__item--rot46 bg-image__item--w17"
+              style="left: 518px; bottom: 281px;"></div>
+            <!-- blue round -->
+            <div class="bg-image__item bg-image__item--outer bg-image__item--w42" style="left: 519px; bottom: 159px;">
+            </div>
+          </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- Partners -->
@@ -96,7 +150,7 @@
       </div>
     </section>
     <!-- How it works -->
-    <section class="tutorial">
+    <section class="tutorial" id="tutorial">
       <div class="container">
         <h2 class="tutorial__subtitle">How it works</h2>
         <div class="tutorial__flex-wrp">
@@ -110,31 +164,35 @@
             </p>
             <ul class="tutorial__list">
               <li class="tutorial__item">
-                <a class="tutorial__link" data-stage="1">Complete profile</a>
-                <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
-                  aria-label="Unfold details"><svg width="17" height="10">
-                    <use href="./assets/img/sprite.svg#details"></use>
-                  </svg></button>
+                <a class="tutorial__link" data-stage="1">Complete profile
+                  <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
+                    aria-label="Unfold details"><svg width="17" height="10">
+                      <use href="./assets/img/sprite.svg#details"></use>
+                    </svg></button></a>
+
+                <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </li>
+              <li class="tutorial__item">
+                <a class="tutorial__link" data-stage="2">Search vacancies
+                  <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
+                    aria-label="Unfold details"><svg width="17" height="10">
+                      <use href="./assets/img/sprite.svg#details"></use>
+                    </svg></button>
+                </a>
                 <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                   tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
               </li>
               <li class="tutorial__item">
-                <a class="tutorial__link" data-stage="2">Search vacancies</a>
-                <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
-                  aria-label="Unfold details"><svg width="17" height="10">
-                    <use href="./assets/img/sprite.svg#details"></use>
-                  </svg></button>
-                <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-              </li>
-              <li class="tutorial__item">
-                <a class="tutorial__link" data-stage="2 alternative">Apply job</a>
-                <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
-                  aria-label="Unfold details"><svg width="17" height="10">
-                    <use href="./assets/img/sprite.svg#details"></use>
-                  </svg></button>
+                <a class="tutorial__link" data-stage="2 alt">Apply job
+                  <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
+                    aria-label="Unfold details"><svg width="17" height="10">
+                      <use href="./assets/img/sprite.svg#details"></use>
+                    </svg></button>
+                </a>
                 <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                   tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
@@ -151,7 +209,7 @@
       </div>
     </section>
     <!-- Advantages -->
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <h2 class="advantages__title">Why choose us</h2>
         <p class="advantages__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -195,26 +253,36 @@
     </section>
     <!-- Featured jobs -->
     <section class="jobs">
-      <div class="__container">
+      <div class="container">
         <h2 class="jobs__title">Featured jobs</h2>
         <p class="jobs__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam.</p>
-        <div class="jobs-slider">
-          <ul class="controls jobs-slider-controls jobs-slider-controls__flex-wrp">
-            <li class=" jobs-slider-controls__btn controls__btn controls__btn--centered">
+      </div>
+      <div class="jobs__slider-container">
+        <ul class="controls jobs-slider-controls jobs-slider-controls__flex-wrp">
+          <li>
+            <button type="button"
+              class=" jobs-slider-controls__btn controls__btn controls__btn--centered js-slider-btn-prev"
+              aria-label="previos slide button">
               <svg width="32" height="27">
                 <use href="./assets/img/sprite.svg#arrow-l"></use>
               </svg>
-            </li>
-            <li class=" jobs-slider-controls__btn controls__btn controls__btn--centered">
+            </button>
+          </li>
+          <li>
+            <button type="button"
+              class=" jobs-slider-controls__btn controls__btn controls__btn--centered js-slider-btn-next"
+              aria-label="next slide button">
               <svg width="32" height="27">
                 <use href="./assets/img/sprite.svg#arrow-r"></use>
               </svg>
-            </li>
-          </ul>
-          <ul class="jobs__flex-wrp">
-            <li class="jobs-card">
+            </button>
+          </li>
+        </ul>
+        <div class="jobs-slider">
+          <ul class="jobs-slider__flex-wrp js-slider">
+            <li class="jobs-card js-slider-item">
               <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
                 <svg width="25" height="5">
                   <use href="./assets/img/sprite.svg#menu"></use>
@@ -227,7 +295,8 @@
               <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
                   class="jobs-card__remark">/monthly</span></p>
               <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View map</a></p>
+                  href="">View
+                  map</a></p>
               <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
                 <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
                   aria-label="Add to favorites"><svg width="24" height="22">
@@ -236,7 +305,7 @@
                 <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
               </div>
             </li>
-            <li class="jobs-card">
+            <li class="jobs-card js-slider-item">
               <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
                 <svg width="25" height="5">
                   <use href="./assets/img/sprite.svg#menu"></use>
@@ -249,7 +318,8 @@
               <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
                   class="jobs-card__remark">/monthly</span></p>
               <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View map</a></p>
+                  href="">View
+                  map</a></p>
               <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
                 <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
                   aria-label="Add to favorites"><svg width="24" height="22">
@@ -258,7 +328,7 @@
                 <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
               </div>
             </li>
-            <li class="jobs-card">
+            <li class="jobs-card js-slider-item">
               <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
                 <svg width="25" height="5">
                   <use href="./assets/img/sprite.svg#menu"></use>
@@ -271,7 +341,146 @@
               <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
                   class="jobs-card__remark">/monthly</span></p>
               <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View map</a></p>
+                  href="">View
+                  map</a></p>
+              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                  aria-label="Add to favorites"><svg width="24" height="22">
+                    <use href="./assets/img/sprite.svg#like"></use>
+                  </svg></button>
+                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+              </div>
+            </li>
+            <li class="jobs-card js-slider-item">
+              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                <svg width="25" height="5">
+                  <use href="./assets/img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                width="75" height="75">
+              <h3 class="jobs-card__heading">Database Programmer</h3>
+              <p class="jobs-card__company">Marraz team</p>
+              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                  class="jobs-card__remark">/monthly</span></p>
+              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                  href="">View
+                  map</a></p>
+              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                  aria-label="Add to favorites"><svg width="24" height="22">
+                    <use href="./assets/img/sprite.svg#like"></use>
+                  </svg></button>
+                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+              </div>
+            </li>
+            <li class="jobs-card js-slider-item">
+              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                <svg width="25" height="5">
+                  <use href="./assets/img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                width="75" height="75">
+              <h3 class="jobs-card__heading">Database Programmer</h3>
+              <p class="jobs-card__company">Marraz team</p>
+              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                  class="jobs-card__remark">/monthly</span></p>
+              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                  href="">View
+                  map</a></p>
+              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                  aria-label="Add to favorites"><svg width="24" height="22">
+                    <use href="./assets/img/sprite.svg#like"></use>
+                  </svg></button>
+                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+              </div>
+            </li>
+            <li class="jobs-card js-slider-item">
+              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                <svg width="25" height="5">
+                  <use href="./assets/img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                width="75" height="75">
+              <h3 class="jobs-card__heading">Database Programmer</h3>
+              <p class="jobs-card__company">Marraz team</p>
+              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                  class="jobs-card__remark">/monthly</span></p>
+              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                  href="">View
+                  map</a></p>
+              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                  aria-label="Add to favorites"><svg width="24" height="22">
+                    <use href="./assets/img/sprite.svg#like"></use>
+                  </svg></button>
+                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+              </div>
+            </li>
+            <li class="jobs-card js-slider-item">
+              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                <svg width="25" height="5">
+                  <use href="./assets/img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                width="75" height="75">
+              <h3 class="jobs-card__heading">Database Programmer</h3>
+              <p class="jobs-card__company">Marraz team</p>
+              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                  class="jobs-card__remark">/monthly</span></p>
+              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                  href="">View
+                  map</a></p>
+              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                  aria-label="Add to favorites"><svg width="24" height="22">
+                    <use href="./assets/img/sprite.svg#like"></use>
+                  </svg></button>
+                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+              </div>
+            </li>
+            <li class="jobs-card js-slider-item">
+              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                <svg width="25" height="5">
+                  <use href="./assets/img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                width="75" height="75">
+              <h3 class="jobs-card__heading">Database Programmer</h3>
+              <p class="jobs-card__company">Marraz team</p>
+              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                  class="jobs-card__remark">/monthly</span></p>
+              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                  href="">View
+                  map</a></p>
+              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                  aria-label="Add to favorites"><svg width="24" height="22">
+                    <use href="./assets/img/sprite.svg#like"></use>
+                  </svg></button>
+                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+              </div>
+            </li>
+            <li class="jobs-card js-slider-item">
+              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                <svg width="25" height="5">
+                  <use href="./assets/img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                width="75" height="75">
+              <h3 class="jobs-card__heading">Database Programmer</h3>
+              <p class="jobs-card__company">Marraz team</p>
+              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                  class="jobs-card__remark">/monthly</span></p>
+              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                  href="">View
+                  map</a></p>
               <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
                 <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
                   aria-label="Add to favorites"><svg width="24" height="22">
@@ -282,11 +491,13 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="container">
         <a class="btn btn--basic btn--rounded jobs__btn btn--centered">View more</a>
       </div>
     </section>
     <!-- Reviews -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="reviews__title">What our customer says</h2>
         <p class="reviews__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -307,7 +518,7 @@
                 aliquip.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip.”</p>
-              <div>
+              <div class="review-controls review-controls__flex-wrp">
                 <ul class="controls review-slider-controls review-slider-controls__flex-wrp">
                   <li>
                     <button class=" review-slider-controls__btn controls__btn controls__btn--centered"
@@ -328,15 +539,31 @@
                     </button>
                   </li>
                 </ul>
-                <div>
+                <div class="review-contents review-contentns__flex-wrp">
                   <!-- Links to reviews by click on reviewer avatar -->
-                  <ul>
-                    <li><a href="" aria-label="open the penultimate review"></a></li>
-                    <li><a href="" aria-label="open the second from the end review"></a></li>
-                    <li><a href="" aria-label="open the third from the end review"></a></li>
+                  <ul class="review-contents__list review-contents__flex-wrp">
+                    <li class="review-contents__item">
+                      <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
+                        href="" aria-label="open the penultimate review"><img
+                          src="./assets/img/content/review/avatar-mini-1.jpg">
+                      </a>
+                    </li>
+                    <li class="review-contents__item">
+                      <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
+                        href="" aria-label="open the second from the end review"><img
+                          src="./assets/img/content/review/avatar-mini-2.jpg">
+                      </a>
+                    </li>
+                    <li class="review-contents__item">
+                      <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
+                        href="" aria-label="open the third from the end review"><img
+                          src="./assets/img/content/review/avatar-mini-3.jpg">
+                      </a>
+                    </li>
                   </ul>
                   <!-- Link to All reviews page -->
-                  <a href="" aria-label="go to the all reviews page"></a>
+                  <a class="review-contents__link review-contents__link--all review-contents__link--centered" href=""
+                    aria-label="go to the all reviews page">21k+</a>
                 </div>
               </div>
             </div>
@@ -369,7 +596,7 @@
       </div>
     </section>
     <!-- Pricing plans -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <h2 class="pricing__title">Pricing plan</h2>
         <p class="pricing__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -511,6 +738,8 @@
       </div>
     </div>
   </footer>
+  <script src="./js/slider.js" type="module"></script>
+  <script src="./js/unfold-details.js" type="module"></script>
 </body>
 
 </html>
