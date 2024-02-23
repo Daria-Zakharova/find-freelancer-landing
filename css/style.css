@@ -79,6 +79,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
 }
@@ -115,20 +116,26 @@ ul {
 }
 
 .container {
-  max-width: 1130px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
+}
+
+.main-container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* Utility classes */
 
-[class*='flex-wrp'] {
+[class*='__flex-wrp'] {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-[class*='accented'] {
+[class*='--accented'] {
   color: var(--color-accent);
 }
 
@@ -203,6 +210,7 @@ ul {
 .btn--card:focus {
   background-color: var(--color-bg-btn-focused);
   color: var(--color-bg-main);
+  box-shadow: var(--shd-btn-foc);
 }
 
 /* Controls */
@@ -269,12 +277,13 @@ ul {
 
 /* Search */
 .search-form {
+  flex-basis: 26.9%;
   position: relative;
   margin-right: 26px;
 }
 
 .search-form__input {
-  width: 307px;
+  width: 100%;
   height: 35px;
   padding: 10px 55px 10px 19px;
   border-radius: var(--br-search-form);
@@ -317,16 +326,6 @@ ul {
   text-decoration: underline;
 }
 
-/* .auth__btn--left-rounded {
-    background-image: linear-gradient(120deg, transparent 10%, var(--color-bg-hero) 80%);
-    border-top-left-radius: var(--br-search-form);
-    border-bottom-left-radius: var(--br-search-form);
-}
-.auth__btn--right-rounded {
-    background-image: linear-gradient(120deg, var(--color-bg-hero) 20%, transparent 80%);
-    border-top-right-radius: var(--br-search-form);
-    border-bottom-right-radius: var(--br-search-form);
-} */
 .auth__btn--separated {
   position: relative;
   padding-left: 1em;
@@ -339,21 +338,34 @@ ul {
 }
 
 /* Hero */
+
 .hero__bg {
   position: absolute;
   z-index: -1;
-  top: -82px;
-  left: -51px;
-  width: 100%;
-  height: 647px;
+  top: -76px;
+  left: 0;
+  width: calc(100% - 78px);
+  min-width: 1140px;
+  min-height: 647px;
   background-color: var(--color-bg-hero);
   box-shadow: var(--shd-hero-bg);
 }
 
+@media screen and (max-width: 1139px) {
+  .hero__container {
+    position: relative;
+  }
+
+  .hero__bg {
+    width: 100%;
+    height: 100%;
+  }
+}
 .hero__content {
   position: relative;
+  /* width: 50%; */
   padding-top: 114px;
-  padding-right: 566px;
+  padding-right: 50%;
   padding-bottom: 126px;
 }
 
@@ -413,7 +425,7 @@ ul {
 
 .bg-image {
   position: absolute;
-  left: 541px;
+  right: 0;
   bottom: 0;
   z-index: 1;
   width: 568px;
@@ -723,16 +735,16 @@ ul {
 }
 
 .tutorial__details {
-  height: 0;
-  overflow: hidden;
+  display: none;
   padding: 0 10px;
   transform-origin: left;
   background-color: var(--color-bg-hero);
+  animation: appear var(--transition);
 }
 
 .tutorial__details--visible {
   padding-bottom: 10px;
-  height: 100%;
+  display: block;
 }
 
 .tutorial__details-btn {
@@ -1249,6 +1261,35 @@ ul {
   padding: 12px;
 }
 
+/* scroll-to-top-btn */
+
+.scroll-top-btn {
+  position: sticky;
+  display: none;
+  bottom: 200px;
+  margin: 0 10px -50px auto;
+  padding: 14px;
+  aspect-ratio: 1;
+  border-radius: var(--br-rounded);
+  color: var(--color-accent);
+  background-color: var(--color-bg-card-foc);
+  transform: rotate(90deg);
+  animation: appear 350ms linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.scroll-top-btn--visible {
+  display: block;
+}
+
 /* Footer */
 
 .footer {
@@ -1331,4 +1372,48 @@ ul {
 .socials__link:focus {
   color: var(--color-bg-main);
   background-color: var(--color-bg-socials-foc);
+}
+
+.error-message {
+  height: 100vh;
+}
+
+.error-message__flex-wrp {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+.error-message__img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.error-message__title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .error-message__flex-wrp {
+    flex-direction: row;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .error-message__img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .error-message__flex-wrp {
+    width: 50%;
+    height: 50%;
+  }
+
+  .error-message__img {
+    width: 40%;
+  }
 }

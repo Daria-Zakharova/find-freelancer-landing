@@ -46,8 +46,8 @@
         </form>
         <!-- Authorization -->
         <ul class="auth auth__flex-wrp">
-          <li><button class="btn auth__btn auth__btn--left-rounded" type="button">Login</button></li>
-          <li><button class="btn auth__btn auth__btn--right-rounded auth__btn--separated" type="button">Sign up</button>
+          <li><button class="btn auth__btn" type="button">Login</button></li>
+          <li><button class="btn auth__btn auth__btn--separated" type="button">Sign up</button>
           </li>
         </ul>
       </div>
@@ -57,7 +57,7 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
+      <div class="hero__container container">
         <div class="hero__bg"></div>
         <div class="hero__content">
           <h1 class="hero__main-title">Find out talented <br><span class="hero__title--accented">freelancer</span> with
@@ -130,514 +130,523 @@
       </div>
       </div>
     </section>
-    <!-- Partners -->
-    <section class="partners">
-      <div class="container">
-        <ul class=" partners__flex-wrp">
-          <li><a href="" aria-label="A link to Design studio website"><img
-                src="./assets/img/content/partners/design-studio.png" alt=""></a></li>
-          <li><a href="" aria-label="A link to Design and branding website"><img
-                src="./assets/img/content/partners/design-and-branding.png" alt=""></a></li>
-          <li><a href="" aria-label="A link to Greenery website"><img src="./assets/img/content/partners/greenery.png"
-                alt=""></a></li>
-          <li><a href="" aria-label="A link to Style pure nature website"><img
-                src="./assets/img/content/partners/style-natural.png" alt=""></a></li>
-          <li><a href="" aria-label="A link to website"><img
-                src="./assets/img/content/partners/nature-organic-beauty.png" alt=""></a></li>
-          <li><a href="" aria-label="A link to Your company website"><img
-                src="./assets/img/content/partners/your-company.png" alt=""></a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- How it works -->
-    <section class="tutorial" id="tutorial">
-      <div class="container">
-        <h2 class="tutorial__subtitle">How it works</h2>
-        <div class="tutorial__flex-wrp">
-          <div class="tutorial__content">
-            <p class="tutorial__title">
-              <strong>
-                <span class="tutorial__accent">Start</span> <span class="tutorial__accent tutorial__accent--delay">find
-                  a job
-                  you love</span> <br><span class="tutorial__accent tutorial__accent--double-delay">with us</span> <span
-                  class="tutorial__accent">easily</span></strong>
-            </p>
-            <ul class="tutorial__list">
-              <li class="tutorial__item">
-                <a class="tutorial__link" data-stage="1">Complete profile
-                  <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
-                    aria-label="Unfold details"><svg width="17" height="10">
-                      <use href="./assets/img/sprite.svg#details"></use>
-                    </svg></button></a>
+    <div class="main-container">
+      <!-- Partners -->
+      <section class="partners">
+        <div class="container">
+          <ul class=" partners__flex-wrp">
+            <li><a href="" aria-label="A link to Design studio website"><img
+                  src="./assets/img/content/partners/design-studio.png" alt=""></a></li>
+            <li><a href="" aria-label="A link to Design and branding website"><img
+                  src="./assets/img/content/partners/design-and-branding.png" alt=""></a></li>
+            <li><a href="" aria-label="A link to Greenery website"><img src="./assets/img/content/partners/greenery.png"
+                  alt=""></a></li>
+            <li><a href="" aria-label="A link to Style pure nature website"><img
+                  src="./assets/img/content/partners/style-natural.png" alt=""></a></li>
+            <li><a href="" aria-label="A link to website"><img
+                  src="./assets/img/content/partners/nature-organic-beauty.png" alt=""></a></li>
+            <li><a href="" aria-label="A link to Your company website"><img
+                  src="./assets/img/content/partners/your-company.png" alt=""></a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- How it works -->
+      <section class="tutorial" id="tutorial">
+        <div class="container">
+          <h2 class="tutorial__subtitle">How it works</h2>
+          <div class="tutorial__flex-wrp">
+            <div class="tutorial__content">
+              <p class="tutorial__title">
+                <strong>
+                  <span class="tutorial__accent">Start</span> <span
+                    class="tutorial__accent tutorial__accent--delay">find
+                    a job
+                    you love</span> <br><span class="tutorial__accent tutorial__accent--double-delay">with us</span>
+                  <span class="tutorial__accent">easily</span></strong>
+              </p>
+              <ul class="tutorial__list">
+                <li class="tutorial__item">
+                  <a class="tutorial__link" data-stage="1">Complete profile
+                    <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
+                      aria-label="Unfold details"><svg width="17" height="10">
+                        <use href="./assets/img/sprite.svg#details"></use>
+                      </svg></button></a>
 
-                <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-              </li>
-              <li class="tutorial__item">
-                <a class="tutorial__link" data-stage="2">Search vacancies
-                  <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
-                    aria-label="Unfold details"><svg width="17" height="10">
-                      <use href="./assets/img/sprite.svg#details"></use>
-                    </svg></button>
-                </a>
-                <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-              </li>
-              <li class="tutorial__item">
-                <a class="tutorial__link" data-stage="2 alt">Apply job
-                  <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
-                    aria-label="Unfold details"><svg width="17" height="10">
-                      <use href="./assets/img/sprite.svg#details"></use>
-                    </svg></button>
-                </a>
-                <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="tutorial__video">
-            <iframe width="635" height="433" src="https://www.youtube.com/embed/gnx0VQ-xQbA?si=-hBChPE4KPz4oZHs"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+                  <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </li>
+                <li class="tutorial__item">
+                  <a class="tutorial__link" data-stage="2">Search vacancies
+                    <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
+                      aria-label="Unfold details"><svg width="17" height="10">
+                        <use href="./assets/img/sprite.svg#details"></use>
+                      </svg></button>
+                  </a>
+                  <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </li>
+                <li class="tutorial__item">
+                  <a class="tutorial__link" data-stage="2 alt">Apply job
+                    <button type="button" class="tutorial__details-btn tutorial__details-btn--centered"
+                      aria-label="Unfold details"><svg width="17" height="10">
+                        <use href="./assets/img/sprite.svg#details"></use>
+                      </svg></button>
+                  </a>
+                  <p class="tutorial__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tutorial__video">
+              <iframe width="635" height="433" src="https://www.youtube.com/embed/gnx0VQ-xQbA?si=-hBChPE4KPz4oZHs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Advantages -->
-    <section class="advantages" id="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Why choose us</h2>
-        <p class="advantages__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <ul class="advantages__flex-wrp">
-          <li class="advantages-card">
-            <span class="advantages-card__icon advantages-card__icon--centered" data-color="blue">
-              <svg width="37" height="37">
-                <use href="./assets/img/sprite.svg#advantages"></use>
-              </svg>
-            </span>
-            <h3 class="advantages-card__heading">Trusted</h3>
-            <p class="advantages-card__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et
-              dolore magna.</p>
-          </li>
-          <li class="advantages-card">
-            <span class="advantages-card__icon advantages-card__icon--centered" data-color="orange">
-              <svg width="37" height="37">
-                <use href="./assets/img/sprite.svg#advantages"></use>
-              </svg>
-            </span>
-            <h3 class="advantages-card__heading">Easy to Use</h3>
-            <p class="advantages-card__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et
-              dolore magna.</p>
-          </li>
-          <li class="advantages-card">
-            <span class="advantages-card__icon advantages-card__icon--centered" data-color="violet">
-              <svg width="37" height="37">
-                <use href="./assets/img/sprite.svg#advantages"></use>
-              </svg>
-            </span>
-            <h3 class="advantages-card__heading">Faster</h3>
-            <p class="advantages-card__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et
-              dolore magna.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Featured jobs -->
-    <section class="jobs">
-      <div class="container">
-        <h2 class="jobs__title">Featured jobs</h2>
-        <p class="jobs__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam.</p>
-      </div>
-      <div class="jobs__slider-container">
-        <ul class="controls jobs-slider-controls jobs-slider-controls__flex-wrp">
-          <li>
-            <button type="button"
-              class=" jobs-slider-controls__btn controls__btn controls__btn--centered js-slider-btn-prev"
-              aria-label="previos slide button">
-              <svg width="32" height="27">
-                <use href="./assets/img/sprite.svg#arrow-l"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button"
-              class=" jobs-slider-controls__btn controls__btn controls__btn--centered js-slider-btn-next"
-              aria-label="next slide button">
-              <svg width="32" height="27">
-                <use href="./assets/img/sprite.svg#arrow-r"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-        <div class="jobs-slider">
-          <ul class="jobs-slider__flex-wrp js-slider">
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
+      </section>
+      <!-- Advantages -->
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <h2 class="advantages__title">Why choose us</h2>
+          <p class="advantages__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <ul class="advantages__flex-wrp">
+            <li class="advantages-card">
+              <span class="advantages-card__icon advantages-card__icon--centered" data-color="blue">
+                <svg width="37" height="37">
+                  <use href="./assets/img/sprite.svg#advantages"></use>
                 </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
+              </span>
+              <h3 class="advantages-card__heading">Trusted</h3>
+              <p class="advantages-card__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et
+                dolore magna.</p>
             </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
+            <li class="advantages-card">
+              <span class="advantages-card__icon advantages-card__icon--centered" data-color="orange">
+                <svg width="37" height="37">
+                  <use href="./assets/img/sprite.svg#advantages"></use>
                 </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
+              </span>
+              <h3 class="advantages-card__heading">Easy to Use</h3>
+              <p class="advantages-card__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et
+                dolore magna.</p>
             </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
+            <li class="advantages-card">
+              <span class="advantages-card__icon advantages-card__icon--centered" data-color="violet">
+                <svg width="37" height="37">
+                  <use href="./assets/img/sprite.svg#advantages"></use>
                 </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
-            </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
-                </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
-            </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
-                </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
-            </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
-                </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
-            </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
-                </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
-            </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
-                </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
-            </li>
-            <li class="jobs-card js-slider-item">
-              <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
-                <svg width="25" height="5">
-                  <use href="./assets/img/sprite.svg#menu"></use>
-                </svg>
-              </button>
-              <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
-                width="75" height="75">
-              <h3 class="jobs-card__heading">Database Programmer</h3>
-              <p class="jobs-card__company">Marraz team</p>
-              <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
-                  class="jobs-card__remark">/monthly</span></p>
-              <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
-                  href="">View
-                  map</a></p>
-              <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
-                <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
-                  aria-label="Add to favorites"><svg width="24" height="22">
-                    <use href="./assets/img/sprite.svg#like"></use>
-                  </svg></button>
-                <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
-              </div>
+              </span>
+              <h3 class="advantages-card__heading">Faster</h3>
+              <p class="advantages-card__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et
+                dolore magna.</p>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="container">
-        <a class="btn btn--basic btn--rounded jobs__btn btn--centered">View more</a>
-      </div>
-    </section>
-    <!-- Reviews -->
-    <section class="reviews" id="reviews">
-      <div class="container">
-        <h2 class="reviews__title">What our customer says</h2>
-        <p class="reviews__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <article class="review">
-          <div class="review__flex-wrp">
-            <div class="review__avatar-wrp">
-              <img class="review__avatar" src="./assets/img/content/review/avatar_big.png" alt="Reviewer avatar"
-                width="330" height="330">
-            </div>
-            <div class="review__txt-content">
-              <h3 class="review__heading">William Smith</h3>
-              <p class="review__subheading">Seo of the Love Students</p>
-              <p class="review__rate" data-rate="4.8">4.8</p>
-              <p class="review__txt">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut
-                aliquip.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip.”</p>
-              <div class="review-controls review-controls__flex-wrp">
-                <ul class="controls review-slider-controls review-slider-controls__flex-wrp">
-                  <li>
-                    <button class=" review-slider-controls__btn controls__btn controls__btn--centered"
-                      aria-label="Go to the previous review">
-                      <svg width="22" height="18">
-                        <use width="22" height="18" href="./assets/img/sprite.svg#arrow-l">
-                        </use>
-                      </svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="review-slider-controls__btn controls__btn controls__btn--centered"
-                      aria-label="Go to the next review">
-                      <svg width="22" height="18">
-                        <use width="22" height="18" href="./assets/img/sprite.svg#arrow-r">
-                        </use>
-                      </svg>
-                    </button>
-                  </li>
-                </ul>
-                <div class="review-contents review-contentns__flex-wrp">
-                  <!-- Links to reviews by click on reviewer avatar -->
-                  <ul class="review-contents__list review-contents__flex-wrp">
-                    <li class="review-contents__item">
-                      <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
-                        href="" aria-label="open the penultimate review"><img
-                          src="./assets/img/content/review/avatar-mini-1.jpg">
-                      </a>
+      </section>
+      <!-- Featured jobs -->
+      <section class="jobs">
+        <div class="container">
+          <h2 class="jobs__title">Featured jobs</h2>
+          <p class="jobs__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="jobs__slider-container">
+          <ul class="controls jobs-slider-controls jobs-slider-controls__flex-wrp">
+            <li>
+              <button type="button"
+                class=" jobs-slider-controls__btn controls__btn controls__btn--centered js-slider-btn-prev"
+                aria-label="previos slide button">
+                <svg width="32" height="27">
+                  <use href="./assets/img/sprite.svg#arrow-l"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class=" jobs-slider-controls__btn controls__btn controls__btn--centered js-slider-btn-next"
+                aria-label="next slide button">
+                <svg width="32" height="27">
+                  <use href="./assets/img/sprite.svg#arrow-r"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="jobs-slider">
+            <ul class="jobs-slider__flex-wrp js-slider">
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar1.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+              <li class="jobs-card js-slider-item">
+                <button class="jobs-card__menu-btn jobs-card__menu-btn--centered" aria-label="menu button">
+                  <svg width="25" height="5">
+                    <use href="./assets/img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+                <img class="jobs-card__avatar" src="./assets/img/content/jobs/avatar2.jpg" alt="freelancer avatar"
+                  width="75" height="75">
+                <h3 class="jobs-card__heading">Database Programmer</h3>
+                <p class="jobs-card__company">Marraz team</p>
+                <p class="jobs-card__info jobs-card__info--salary">14,000-25,000 <span
+                    class="jobs-card__remark">/monthly</span></p>
+                <p class="jobs-card__info jobs-card__info--location">London, Enlend <a class="jobs-card__remark"
+                    href="">View
+                    map</a></p>
+                <div class="jobs-card__btns-block jobs-card__btns-block__flex-wrp">
+                  <button class="jobs-card__favorites-btn jobs-card__favorites-btn--centered"
+                    aria-label="Add to favorites"><svg width="24" height="22">
+                      <use href="./assets/img/sprite.svg#like"></use>
+                    </svg></button>
+                  <a class="btn btn--card btn--rounded jobs-card__btn btn--centered">Apply Now</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <a class="btn btn--basic btn--rounded jobs__btn btn--centered">View more</a>
+        </div>
+      </section>
+      <!-- Reviews -->
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title">What our customer says</h2>
+          <p class="reviews__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <article class="review">
+            <div class="review__flex-wrp">
+              <div class="review__avatar-wrp">
+                <img class="review__avatar" src="./assets/img/content/review/avatar_big.png" alt="Reviewer avatar"
+                  width="330" height="330">
+              </div>
+              <div class="review__txt-content">
+                <h3 class="review__heading">William Smith</h3>
+                <p class="review__subheading">Seo of the Love Students</p>
+                <p class="review__rate" data-rate="4.8">4.8</p>
+                <p class="review__txt">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip.”</p>
+                <div class="review-controls review-controls__flex-wrp">
+                  <ul class="controls review-slider-controls review-slider-controls__flex-wrp">
+                    <li>
+                      <button class=" review-slider-controls__btn controls__btn controls__btn--centered"
+                        aria-label="Go to the previous review">
+                        <svg width="22" height="18">
+                          <use width="22" height="18" href="./assets/img/sprite.svg#arrow-l">
+                          </use>
+                        </svg>
+                      </button>
                     </li>
-                    <li class="review-contents__item">
-                      <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
-                        href="" aria-label="open the second from the end review"><img
-                          src="./assets/img/content/review/avatar-mini-2.jpg">
-                      </a>
-                    </li>
-                    <li class="review-contents__item">
-                      <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
-                        href="" aria-label="open the third from the end review"><img
-                          src="./assets/img/content/review/avatar-mini-3.jpg">
-                      </a>
+                    <li>
+                      <button class="review-slider-controls__btn controls__btn controls__btn--centered"
+                        aria-label="Go to the next review">
+                        <svg width="22" height="18">
+                          <use width="22" height="18" href="./assets/img/sprite.svg#arrow-r">
+                          </use>
+                        </svg>
+                      </button>
                     </li>
                   </ul>
-                  <!-- Link to All reviews page -->
-                  <a class="review-contents__link review-contents__link--all review-contents__link--centered" href=""
-                    aria-label="go to the all reviews page">21k+</a>
+                  <div class="review-contents review-contentns__flex-wrp">
+                    <!-- Links to reviews by click on reviewer avatar -->
+                    <ul class="review-contents__list review-contents__flex-wrp">
+                      <li class="review-contents__item">
+                        <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
+                          href="" aria-label="open the penultimate review"><img
+                            src="./assets/img/content/review/avatar-mini-1.jpg">
+                        </a>
+                      </li>
+                      <li class="review-contents__item">
+                        <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
+                          href="" aria-label="open the second from the end review"><img
+                            src="./assets/img/content/review/avatar-mini-2.jpg">
+                        </a>
+                      </li>
+                      <li class="review-contents__item">
+                        <a class="review-contents__link review-contents__link--avatar  review-contents__link--centered"
+                          href="" aria-label="open the third from the end review"><img
+                            src="./assets/img/content/review/avatar-mini-3.jpg">
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Link to All reviews page -->
+                    <a class="review-contents__link review-contents__link--all review-contents__link--centered" href=""
+                      aria-label="go to the all reviews page">21k+</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- Stats -->
-    <section class="statistics">
-      <div class="container">
-        <h2 class="statistics__title" style="display: none;">Statistics</h2>
-        <ul class="statistics__flex-wrp">
-          <li>
-            <p class="statistics__data">36,789</p>
-            <p class="statistics__units">Talented freelancer</p>
-          </li>
-          <li>
-            <p class="statistics__data">45,973</p>
-            <p class="statistics__units">Visitors</p>
-          </li>
-          <li>
-            <p class="statistics__data">56,461</p>
-            <p class="statistics__units">Contract made</p>
-          </li>
-          <li>
-            <p class="statistics__data">852k</p>
-            <p class="statistics__units">Companies</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Pricing plans -->
-    <section class="pricing" id="pricing">
-      <div class="container">
-        <h2 class="pricing__title">Pricing plan</h2>
-        <p class="pricing__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <ul class="pricing__flex-wrp">
-          <li class="pricing-card">
-            <h3 class="pricing-card__heading">Free</h3>
-            <p class="pricing-card__price">$0</p>
-            <p class="pricing-card__lifespan">Per month</p>
-            <ul class="pricing-card__list">
-              <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
-              <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
-              <li class="pricing-card__item">Sed do eiusmod tempor</li>
-            </ul>
-            <a class="btn btn--rounded btn--card pricing-card__btn btn--centered">Purchase now</a>
-          </li>
-          <li class="pricing-card">
-            <h3 class="pricing-card__heading">Premium</h3>
-            <p class="pricing-card__price">$175</p>
-            <p class="pricing-card__lifespan">Per month</p>
-            <ul class="pricing-card__list">
-              <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
-              <li class="pricing-card__item">Ut enim ad minim veniam.</li>
-              <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
-            </ul>
-            <a class="btn btn--rounded btn--card pricing-card__btn btn--centered">Purchase now</a>
-          </li>
-          <li class="pricing-card">
-            <h3 class="pricing-card__heading">Platinum</h3>
-            <p class="pricing-card__price">$500</p>
-            <p class="pricing-card__lifespan">Per month</p>
-            <ul class="pricing-card__list">
-              <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
-              <li class="pricing-card__item">Ut enim ad minim veniam.</li>
-              <li class="pricing-card__item">Sed do eiusmod tempor</li>
-            </ul>
-            <a class="btn btn--rounded btn--card pricing-card__btn btn--centered">Purchase now</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+          </article>
+        </div>
+      </section>
+      <!-- Stats -->
+      <section class="statistics">
+        <div class="container">
+          <h2 class="statistics__title" style="display: none;">Statistics</h2>
+          <ul class="statistics__flex-wrp">
+            <li>
+              <p class="statistics__data">36,789</p>
+              <p class="statistics__units">Talented freelancer</p>
+            </li>
+            <li>
+              <p class="statistics__data">45,973</p>
+              <p class="statistics__units">Visitors</p>
+            </li>
+            <li>
+              <p class="statistics__data">56,461</p>
+              <p class="statistics__units">Contract made</p>
+            </li>
+            <li>
+              <p class="statistics__data">852k</p>
+              <p class="statistics__units">Companies</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Pricing plans -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="pricing__title">Pricing plan</h2>
+          <p class="pricing__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <ul class="pricing__flex-wrp">
+            <li class="pricing-card">
+              <h3 class="pricing-card__heading">Free</h3>
+              <p class="pricing-card__price">$0</p>
+              <p class="pricing-card__lifespan">Per month</p>
+              <ul class="pricing-card__list">
+                <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
+                <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
+                <li class="pricing-card__item">Sed do eiusmod tempor</li>
+              </ul>
+              <a class="btn btn--rounded btn--card pricing-card__btn btn--centered">Purchase now</a>
+            </li>
+            <li class="pricing-card">
+              <h3 class="pricing-card__heading">Premium</h3>
+              <p class="pricing-card__price">$175</p>
+              <p class="pricing-card__lifespan">Per month</p>
+              <ul class="pricing-card__list">
+                <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
+                <li class="pricing-card__item">Ut enim ad minim veniam.</li>
+                <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+              <a class="btn btn--rounded btn--card pricing-card__btn btn--centered">Purchase now</a>
+            </li>
+            <li class="pricing-card">
+              <h3 class="pricing-card__heading">Platinum</h3>
+              <p class="pricing-card__price">$500</p>
+              <p class="pricing-card__lifespan">Per month</p>
+              <ul class="pricing-card__list">
+                <li class="pricing-card__item">Lorem ipsum dolor sit amet.</li>
+                <li class="pricing-card__item">Ut enim ad minim veniam.</li>
+                <li class="pricing-card__item">Sed do eiusmod tempor</li>
+              </ul>
+              <a class="btn btn--rounded btn--card pricing-card__btn btn--centered">Purchase now</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <button class="scroll-top-btn scroll-top-btn--centered btn btn--card" type="button">
+        <svg width="29" height="24">
+          <use href="./assets/img/sprite.svg#arrow-l"></use>
+        </svg>
+      </button>
+    </div>
   </main>
   <!-- Footer -->
   <footer class="footer">
@@ -740,6 +749,8 @@
   </footer>
   <script src="./js/slider.js" type="module"></script>
   <script src="./js/unfold-details.js" type="module"></script>
+  <script src="./js/scroll-top-btn.js" type="module"></script>
+  <script src="./js/lazy-developer.js" type="module"></script>
 </body>
 
 </html>
